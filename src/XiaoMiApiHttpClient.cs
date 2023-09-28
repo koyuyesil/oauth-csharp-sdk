@@ -32,7 +32,8 @@ namespace XiaoMiOauth2
             method = method.ToUpperInvariant();
             string nonce = XiaoMiHttpClientUtils.getNonce();
             string query = urlBuilder.Query.Substring(1);
-            Console.WriteLine(XiaoMiHttpClientConst.apiURI + localPath + "?" + query);
+            Console.WriteLine(urlBuilder.Uri);
+            Console.WriteLine();
             string ciphertext = XiaoMiHttpClientUtils.createCiphertext(nonce, query, method, localPath, macKey);
             string header = XiaoMiHttpClientUtils.createHeader(nonce, ciphertext, accessToken);
             //http传输过程

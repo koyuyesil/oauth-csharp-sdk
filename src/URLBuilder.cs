@@ -34,14 +34,14 @@ namespace XiaoMiOauth2
         {
             get
             {
-                string path = base.Path;
+                string path = Path;
                 return path.Substring(path.LastIndexOf("/") + 1);
             }
             set
             {
-                string path = base.Path;
+                string path = Path;
                 path = path.Substring(0, path.LastIndexOf("/"));
-                base.Path = string.Concat(path, "/", value);
+                Path = string.Concat(path, "/", value);
             }
         }
         #endregion
@@ -83,7 +83,7 @@ namespace XiaoMiOauth2
         {
             GetQueryString();
 
-            return base.Uri.AbsoluteUri;
+            return Uri.AbsoluteUri;
         }
 
         #endregion
@@ -91,7 +91,7 @@ namespace XiaoMiOauth2
         #region Private methods
         private void PopulateQueryString()
         {
-            string query = base.Query;
+            string query = Query;
 
             if (query == string.Empty || query == null)
             {
@@ -122,7 +122,7 @@ namespace XiaoMiOauth2
 
             if (count == 0)
             {
-                base.Query = string.Empty;
+                Query = string.Empty;
                 return;
             }
             string[] keys = new string[count];
@@ -135,7 +135,7 @@ namespace XiaoMiOauth2
                 pairs[i] = string.Concat(keys[i], "=", Uri.EscapeDataString(values[i]));
             }
 
-            base.Query = string.Join("&", pairs);
+            Query = string.Join("&", pairs);
         }
         #endregion
     }

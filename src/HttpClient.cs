@@ -25,20 +25,30 @@ namespace XiaoMiOauth2
                     request.Headers.Add(headersKey.Key, headersKey.Value);
                 }
             }
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-            StreamReader reader = new StreamReader(response.GetResponseStream(), Encoding.GetEncoding("UTF-8"));
-            string respHtml;
+            string respHtml="";
+
+
             try
             {
-                respHtml = reader.ReadToEnd();
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                StreamReader reader = new StreamReader(response.GetResponseStream(), Encoding.GetEncoding("UTF-8"));
+
+                try
+                {
+                    respHtml = reader.ReadToEnd();
+                }
+                catch (Exception e)
+                {
+                    throw e;
+                }
+                finally
+                {
+                    reader.Close();
+                }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw e;
-            }
-            finally
-            {
-                reader.Close();
+                Console.WriteLine(ex.Message); 
             }
             return respHtml;
 

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XiaoMiOauth2", "src\XiaoMiOauth2.csproj", "{7AB9CD3F-1BD0-4DF9-8C97-D8D318B7DBB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AB9CD3F-1BD0-4DF9-8C97-D8D318B7DBB3}.Debug|x86.ActiveCfg = Debug|x86
+		{7AB9CD3F-1BD0-4DF9-8C97-D8D318B7DBB3}.Debug|x86.Build.0 = Debug|x86
+		{7AB9CD3F-1BD0-4DF9-8C97-D8D318B7DBB3}.Release|x86.ActiveCfg = Release|x86
+		{7AB9CD3F-1BD0-4DF9-8C97-D8D318B7DBB3}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBD75A65-88FC-4CC3-9F2E-EE07C60E55C3}
+	EndGlobalSection
+EndGlobal

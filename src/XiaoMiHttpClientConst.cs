@@ -10,6 +10,8 @@ namespace XiaoMiOauth2
         public const String authorizeURI = "https://account.xiaomi.com/oauth2/authorize";
         public const String tokenURI = "https://account.xiaomi.com/oauth2/token";
         public const String apiURI = "https://open.account.xiaomi.com";
+        public const String updateURI = "http://update.miui.com";
+        public const String updateURIv3 = "https://update.intl.miui.com";
         public const String hostURI = "open.account.xiaomi.com";
         public const String clientIdName = "client_id";
         public const String redirectUriName = "redirect_uri";
