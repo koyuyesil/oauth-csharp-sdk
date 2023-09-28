@@ -361,7 +361,4 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/src/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
-/src/obj/x86/Debug/XiaoMiOauth2.csproj.FileListAbsolute.txt
-/src/obj/x86/Debug/XiaoMiOauth2.exe
-/src/obj/x86/Debug/XiaoMiOauth2.pdb
+/src/obj/
